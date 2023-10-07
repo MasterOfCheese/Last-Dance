@@ -1,0 +1,719 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  margin-top: 1em;
+  margin-right: 4em;
+  /* margin-left:3em; */
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header1 {
+  display: flex;
+  justify-content: right;
+  width: 91%;
+  margin-left: 4em;
+  gap: 4em;
+  position: relative;
+  z-index: 2;
+}
+
+.header-logo a {
+  font-style: italic;
+  font-family: ui-sans-serif;
+}
+
+.login-register {
+  display: flex;
+  gap: 0.5em;
+}
+
+.header1 a {
+  color: black;
+  font-size: 0.9em;
+}
+
+.header1 a:hover {
+  color: #FFCC9C;
+}
+
+.header2 {
+  display: flex;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.footer2 .top-footer2 {
+  font-size: smaller;
+  font-family: math;
+}
+
+.header-logo {
+  margin-left: 3em;
+  width: 15%;
+}
+
+.header-logo a:hover {
+  color: #565151;
+}
+
+.header-logo a {
+  color: #333;
+}
+
+.header2 form {
+  display: flex;
+}
+
+.search-container input[type="text"] {
+  width: 65%;
+  height: 55px;
+  border: 3px solid #F0F0F0;
+  border-radius: 10px 0 0 10px;
+  padding-left: 1.5em;
+}
+
+.search-container button {
+  width: 13%;
+  height: 55px;
+  border: 2px solid #F0F0F0;
+  border-radius: 0px 10px 10px 0;
+}
+
+.search-container button:hover {
+  background-color: pink;
+}
+
+.header2 .search-container {
+  margin-top: 2em;
+  width: 47%;
+  margin-left: 271px;
+}
+
+.cart {
+  display: flex;
+}
+
+.cart a {
+  margin-left: -4.7em;
+  margin-top: 2em;
+  border: 2px solid #AC5077;
+  height: 55px;
+  border-radius: 10px;
+  background-color: #AC5077;
+  color: #fff;
+  align-items: center;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  display: flex;
+  gap: 1em;
+  width: 12em;
+}
+
+.cart span:last-child {
+  padding: 1px;
+  border: 1px;
+  border-radius: 50%;
+  background-color: #CC88A5;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -1.3em;
+  margin-bottom: 1.2em;
+}
+
+.header3 {
+  width: 100%;
+  border: 1px solid #f0f0f0;
+  display: flex;
+  position: relative;
+}
+
+.left-header3 {
+  width: 60%;
+  border-right: 1px solid #f0f0f0;
+  margin-left: 0.5em;
+}
+
+.left-header3 ul {
+  display: flex;
+  gap: 3em;
+  list-style: none;
+}
+
+.left-header3 ul li {
+  position: relative;
+  z-index: 2;
+}
+
+.left-header3 ul li ul {
+  display: none;
+  padding: 1em 3em 1.5em 1.5em;
+  background-color: #fff;
+  position: absolute;
+  margin-top: 0em;
+  margin-left: 1em;
+  box-shadow: 0px 0px 10px black;
+  z-index: 2;
+}
+
+.left-header3 ul li:hover ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.ul1 {
+  display: flex;
+  flex-wrap: nowrap; /* Ngăn chặn xuống dòng */
+  position: relative;
+  z-index: 1;
+}
+.ul2 {
+  display: flex;
+  flex-wrap: nowrap; /* Ngăn chặn xuống dòng */
+  position: relative;
+  z-index: 1;
+}
+
+.ul2 li {
+  white-space: nowrap; /* Ngăn chặn ngắn dòng */
+}
+
+.ul3 {
+  display: flex;
+  margin-left: -13.6em!important;
+  gap: 10em!important;
+  padding-right: 8%!important;
+  position: relative;
+  z-index: 1;
+}
+
+.left-ul3,
+.right-ul3,
+.banner-ul3 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap; /* Ngăn chặn xuống dòng */
+  white-space: nowrap; /* Ngăn chặn ngắn dòng */
+  gap: 0.5em;
+}
+
+.left-header3 ul li:hover .ul3 {
+  display: flex;
+  flex-wrap: nowrap; /* Ngăn chặn xuống dòng */
+}
+
+.banner-ul3 h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: -0.1em;
+}
+
+.ul3 .banner-ul3 p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -0.4em;
+}
+
+.ul3 .banner-ul3 span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1em;
+}
+
+.last-li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+
+.last-li strong {
+  color: #AC5077;
+}
+
+.ul3 img {
+  transition: transform 3s;
+  width: 100%;
+}
+.ul3 img:hover {
+  transform: perspective(500px) rotateY(765deg);
+  width: 100%;
+  content: url("hover-banner-li.png");
+  position: relative;
+  z-index: 1;
+}
+
+.left-header3 ul li a {
+  color: black;
+}
+
+i.fa.fa-angle-down {
+  margin-left: 0.5em;
+}
+
+.left-header3 ul li a:hover {
+  color: #FFCC9C;
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out 0s;
+  font-style: italic;
+}
+
+.active {
+  color: #FFCC9C!important;
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out 0s;
+  font-style: italic;
+}
+
+.right-header3 {
+  width: 40%;
+  padding-left: 2em;
+}
+
+.right-header3 p span {
+  color: #AC5077;
+}
+
+.footer2 {
+  display: flex;
+  gap: 10em;
+  margin-bottom: 2em;
+  position: relative;
+  z-index: 0;
+}
+
+.footer-logo a {
+  font-style: italic;
+  font-family: ui-sans-serif;
+}
+
+.footer-logo {
+  display: block;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.footer-logo a:hover {
+  color: #565151;
+}
+
+.footer-logo a {
+  color: #333;
+}
+
+.footer2 .two-sides {
+  display: flex;
+  gap: 4em;
+}
+
+.two-sides a {
+  color: #AC5077;
+}
+
+.footer2 .two-sides .a-left-footer2 {
+  display: inline-grid;
+  gap: 0.5em;
+}
+
+.footer2 .two-sides .a-right-footer2 {
+  display: inline-grid;
+  gap: 0.5em;
+}
+
+.occasions-ranges {
+  margin-left: 5em;
+}
+
+.footer2 .middle-footer2 {
+  display: inline-grid;
+  gap: 0.5em;
+}
+
+.site-links a {
+  color: #AC5077;
+}
+
+.get-in-touch .right-mid-footer2 {
+  display: inline-grid;
+  gap: 0.5em;
+}
+
+.get-in-touch .right-mid-footer2 a {
+  color: #AC5077;
+}
+
+.get-in-touch .right-bot-footer2 {
+  display: inline-grid;
+}
+
+i.fa-brands.fa-twitter.fa-bounce {
+  margin-right: 1em;
+}
+
+.right-bot-footer2 a:hover i.fa-brands.fa-twitter.fa-bounce {
+  font-size: larger !important;
+}
+
+.right-bot-footer2 a:hover i.fa-brands.fa-facebook-f.fa-bounce {
+  font-size: larger !important;
+}
+
+.right-bot-footer2 a:hover i.fa-brands.fa-instagram.fa-bounce {
+  font-size: larger !important;
+}
+
+.right-bot-footer2 a:hover span {
+  color: black!important;
+}
+
+i.fa-brands.fa-facebook-f.fa-bounce {
+  margin-right: 1.5em;
+}
+
+i.fa-brands.fa-instagram.fa-bounce {
+  margin-right: 1.2em;
+}
+
+.get-in-touch .plus-icon {
+  display: inline-grid;
+  gap: 3em;
+}
+
+.credit-card {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  color: black;
+  margin-bottom: 2em;
+}
+
+.copyright strong {
+  color: #AC5077;
+}
+
+.main {
+  background: url("images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+
+.header4 {
+  margin-top: -1.5em;
+}
+.slide {
+  max-width: fit-content;
+  margin: 25px auto;
+  position: relative;
+}
+.slide-wrapper {
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  position: relative;
+}
+.slide-main {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-1000px);
+  transition: transform 0.5s ease-in-out; /* Thêm thuộc tính chuyển động */
+}
+.slide-item {
+  height: 100%;
+  width: 100%;
+  flex: 1 0 100%;
+  transition: opacity 0.5s ease-in-out; /* Thêm thuộc tính chuyển động */
+} 
+.slide-item.active {
+  display: block; /* Hiển thị slide đang hoạt động */
+}
+.slide-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.slide-next {
+  /* để ".shownow a" có thể hover được thì bắt buộc phải đổi position của .slide-next 
+      từ  absolute sang relative và điều chỉnh vài thuộc tính css khác như top; thêm padding-top;
+        margin-bottom; bottom; */
+        /* =>nếu muốn làm responsive thì phải xử lý chỗ position này */
+position: relative;
+padding-top: 38em;
+margin-bottom: -51%;
+transform: translateY(-50%);
+height: 40em;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #AC5077;
+cursor: pointer;
+z-index: 1;
+width: fit-content;
+gap: 66em;
+left: 5%;
+}
+.shopnow a {
+  z-index: 2;
+  position: absolute;
+  width: 1em!important;
+  bottom: 15%;
+  margin-left: 45%;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 5em 1em 5em;
+  font-style: normal;
+  background-color: #984568;
+  color: #fff;
+  white-space: nowrap;
+}
+.shopnow a:hover {
+  background-color: #4b3e4b;
+}
+.content-banner h1a {
+    position: absolute;
+    top: 30%;
+    display: flex;
+    font-size: xxx-large;
+    color: #fff;
+    margin-left: 61%;
+    width: 32%;
+    font-family: auto;
+    letter-spacing: 1px;
+    word-spacing: 6px;
+}
+.content-banner h1b {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  font-size: xxx-large;
+  color: #fff;
+  margin-left: 61%;
+  width: 32%;
+  font-family: auto;
+  letter-spacing: 1px;
+  word-spacing: 6px;
+}
+.content-banner h1c {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  font-size: xxx-large;
+  color: #fff;
+  margin-left: 61%;
+  width: 32%;
+  font-family: auto;
+  letter-spacing: 1px;
+  word-spacing: 6px;
+}
+.content-banner h1d {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  font-size: xxx-large;
+  color: #fff;
+  margin-left: 61%;
+  width: 32%;
+  font-family: auto;
+  letter-spacing: 1px;
+  word-spacing: 6px;
+}
+.content-banner p1 {
+  position: absolute;
+  top: 54%;
+  display: flex;
+  font-size: large;
+  color: #fff;
+  margin-left: 61%;
+  width: 30%;
+  font-family: monospace;
+  z-index: 1;
+}
+.content-banner p2 {
+  position: absolute;
+  top: 54%;
+  display: flex;
+  font-size: large;
+  color: #fff;
+  margin-left: 61%;
+  width: 30%;
+  font-family: monospace;
+  z-index: 1;
+}.content-banner p3 {
+  position: absolute;
+  top: 54%;
+  display: flex;
+  font-size: large;
+  color: #fff;
+  margin-left: 61%;
+  width: 30%;
+  font-family: monospace;
+  z-index: 1;
+}.content-banner p4 {
+  position: absolute;
+  top: 54%;
+  display: flex;
+  font-size: large;
+  color: #fff;
+  margin-left: 61%;
+  width: 30%;
+  font-family: monospace;
+  z-index: 1;
+}
+.arrow-left, .arrow-right {
+  border: 0.1px solid #fff;
+  border-radius: 50%;
+  background: #fff;
+  padding: 0.5em;
+  width: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow-left:hover, .arrow-right:hover {
+  background-color: #8a7676;
+  color: #fff;
+}
+
+.content-banner h1a, .content-banner h1b, .content-banner h1c, .content-banner h1d {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide-item.active .content-banner h1a, .slide-item.active .content-banner h1b, .slide-item.active .content-banner h1c, .slide-item.active .content-banner h1d {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.5s;
+}
+
+.content-banner p1, .content-banner p2, .content-banner p3, .content-banner p4 {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide-item.active .content-banner p1, .slide-item.active .content-banner p2, .slide-item.active .content-banner p3, .slide-item.active .content-banner p4 {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.5s;
+}
+
+.shopnow a {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide-item.active .shopnow a {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+.header5 {
+  display: flex;
+  padding: 2em;
+  background-color: #AD5178;
+  width: 100%;
+  align-items: center;
+  margin-top: -1.6em;
+  height: 7.5em;
+}
+.header5 .sale {
+  width: 65%;
+  display: flex;
+  color: #fff;
+  margin-right: 2em;
+}
+.header5 strong {
+  font-size: large;
+  color: #fff;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(80%);
+  }
+}
+.sale-animation {
+  position: relative;
+  overflow: hidden;
+}
+.sale-animation strong, .sale-animation p {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: slide 5s linear infinite;
+  margin: 0; /* Loại bỏ margin mặc định của các phần tử p */
+}
+.header5 p {
+  color: #DFBBCB;
+}
+.header5 .email {
+  width: 35%;
+  display: flex;
+  margin-top: 0.6em;
+}
+.email .leftside {
+  width: 75%;
+}
+.header5 input[type="email"] {
+  padding: 2em;
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+  background-color: #BC7090;
+  height: 85%;
+  border: solid #BC7090;
+  color: #fff;
+}
+input[type="email"]::placeholder {
+  color: white;
+}
+.email .rightside {
+  width: 25%;
+}
+.header5 button {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  height: 85%;
+  border: 1px solid #fff;
+  color: #BC7090;
+  margin-left: -1em;
+  font-size: 20px;
+}
+.header5 button:hover {
+  background-color: #4b3e4b;
+  border: 1px solid #BC7090;
+  color: #fff;
+}
